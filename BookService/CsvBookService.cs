@@ -36,5 +36,15 @@ namespace BookService
         {
             return _books.Where(b => b.YearOfPublication == year);
         }
+
+        public IEnumerable<Book> BooksBetweenYears(int yearA, int yearB)
+        {
+            return _books.Where(b => b.YearOfPublication > yearA && b.YearOfPublication < yearB);
+        }
+
+        public IEnumerable<Book> LeastFavouriteBooks()
+        {
+            return _books.OrderBy(b => b.Rating).Take(5);
+        }
     }
 }

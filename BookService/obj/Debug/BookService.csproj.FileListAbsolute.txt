@@ -18,3 +18,4 @@ C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.csproj.G
 C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.csproj.CoreCompileInputs.cache
 C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.exe
 C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.pdb
+C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.Configuration.resources

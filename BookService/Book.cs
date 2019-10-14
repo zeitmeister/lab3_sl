@@ -23,6 +23,8 @@ namespace BookService
             Rating = rating;
             NumberOfUserVotes = numberOfUserVotes;
             Authors = new List<Author>();
+
+            
         }
         public Book()
         {
@@ -37,6 +39,7 @@ namespace BookService
             {
                 result += author + ", ";
             }
+            result += this.Rating;
             return result;
         }
     }

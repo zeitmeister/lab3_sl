@@ -68,5 +68,15 @@ namespace BookService
         {
             return inMemoryBooks.Select(b => b).Where(b => b.YearOfPublication == year);
         }
+
+        public IEnumerable<Book> BooksBetweenYears(int yearA, int yearB)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> LeastFavouriteBooks()
+        {
+            throw new NotImplementedException();
+        }
     }
 }
