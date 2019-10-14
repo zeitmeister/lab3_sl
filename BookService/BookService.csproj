@@ -46,12 +46,18 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Author.cs" />
+    <Compile Include="Book.cs" />
     <Compile Include="BookForm.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="BookForm.Designer.cs">
       <DependentUpon>BookForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="CsvBookService.cs" />
+    <Compile Include="CsvParser.cs" />
+    <Compile Include="IBookService.cs" />
+    <Compile Include="InMemoryBookService.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="BookForm.resx">
