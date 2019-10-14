@@ -12,7 +12,11 @@ namespace BookService
 {
     public partial class BookForm : Form
     {
+<<<<<<< HEAD
         private IBookService inMemory = SimpleDI.GetService(); // CsvBookService();
+=======
+        private IBookService inMemory = new CsvBookService();
+>>>>>>> cf3899cf073e4cd2ae6a5d40ccc810f2f15c67aa
 
         public BookForm()
         {
@@ -74,11 +78,14 @@ namespace BookService
             {
                 listBox1.Items.Add(book);
             }
+<<<<<<< HEAD
         }
 
         private void BookForm_Load(object sender, EventArgs e)
         {
 
+=======
+>>>>>>> cf3899cf073e4cd2ae6a5d40ccc810f2f15c67aa
         }
     }
 }

@@ -10,7 +10,10 @@ namespace BookService
     {
         private List<Book> _books;
         private List<Author> _authors;
+<<<<<<< HEAD
 
+=======
+>>>>>>> cf3899cf073e4cd2ae6a5d40ccc810f2f15c67aa
         public CsvBookService()
         {
             CsvParser parser = new CsvParser();

@@ -54,11 +54,14 @@
     <Compile Include="BookForm.Designer.cs">
       <DependentUpon>BookForm.cs</DependentUpon>
     </Compile>
+<<<<<<< HEAD
     <Compile Include="Configuration.Designer.cs">
       <AutoGen>True</AutoGen>
       <DesignTime>True</DesignTime>
       <DependentUpon>Configuration.resx</DependentUpon>
     </Compile>
+=======
+>>>>>>> cf3899cf073e4cd2ae6a5d40ccc810f2f15c67aa
     <Compile Include="CsvBookService.cs" />
     <Compile Include="CsvParser.cs" />
     <Compile Include="IBookService.cs" />
