@@ -68,5 +68,25 @@ namespace BookService
         {
             return inMemoryBooks.Select(b => b).Where(b => b.YearOfPublication == year);
         }
+
+        public IEnumerable<Book> BooksBetweenYears(int yearA, int yearB)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> AllBooksOrderedByRating()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> BooksWithMostNumberOfVotes(int numberOfBooks)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
+        {
+            throw new NotImplementedException();
+        }
     }
 }

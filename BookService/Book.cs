@@ -37,7 +37,7 @@ namespace BookService
             {
                 result += author + ", ";
             }
-            return result;
+            return result + "raiting: " + Rating + ", Votes: " + NumberOfUserVotes;
         }
     }
 }

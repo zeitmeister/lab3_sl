@@ -12,7 +12,7 @@ namespace BookService
 {
     public partial class BookForm : Form
     {
-        private IBookService inMemory = new CsvBookService();
+        private IBookService inMemory = SimpleDI.GetService(); //new CsvBookService();
 
         public BookForm()
         {
@@ -74,6 +74,47 @@ namespace BookService
             {
                 listBox1.Items.Add(book);
             }
+        }
+
+        private void BookForm_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            foreach (var item in inMemory.BooksBetweenYears((int)numericUpDown2.Value, (int)numericUpDown1.Value))
+            {
+                listBox1.Items.Add(item);
+            }
+        }
+
+        private void button7_Click(object sender, EventArgs e)
+        {
+            listBox1.Items.Clear();
+            var bookList = inMemory.AllBooksOrderedByRating();
+            foreach (var item in inMemory.AllBooksOrderedByRating())
+            {
+                listBox1.Items.Add(item);
+            }
+            button7.Text = "add to text";
+            WriteToFile<Book>.WriteToTextFile(bookList);
+        }
+
+        private void button6_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void numericUpDown2_ValueChanged(object sender, EventArgs e)
+        {
+            
+        }
+
+        private void button5_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

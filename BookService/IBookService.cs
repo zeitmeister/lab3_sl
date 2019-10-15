@@ -12,5 +12,11 @@ namespace BookService
         IEnumerable<Author> AllAuthors();
         IEnumerable<Book> BooksByAuthor(string name);
         IEnumerable<Book> BooksByYear(int year);
+        IEnumerable<Book> BooksBetweenYears(int yearA, int yearB);
+        
+        IEnumerable<Book> AllBooksOrderedByRating();
+        
+        IEnumerable<Book> BooksWithMostNumberOfVotes(int numberOfBooks);
+        IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression);
     }
 }

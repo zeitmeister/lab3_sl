@@ -27,6 +27,16 @@ namespace BookService
             return _books.Select(b => b);
         }
 
+        public IEnumerable<Book> AllBooksOrderedByRating()
+        {
+            return _books.OrderBy(b => b.Rating);
+        }
+
+        public IEnumerable<Book> BooksBetweenYears(int yearA, int yearB)
+        {
+            return _books.Where(b => b.YearOfPublication > yearA && b.YearOfPublication < yearB);
+        }
+
         public IEnumerable<Book> BooksByAuthor(string name)
         {
             return _authors.Where(a => a.Name == name).SelectMany(a => a.Books);
@@ -35,6 +45,16 @@ namespace BookService
         public IEnumerable<Book> BooksByYear(int year)
         {
             return _books.Where(b => b.YearOfPublication == year);
+        }
+
+        public IEnumerable<Book> BooksWithMostNumberOfVotes(int numberOfBooks)
+        {
+            return _books.OrderBy(b => b.NumberOfUserVotes).Take(numberOfBooks);
+        }
+
+        public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
+        {
+            return _books.Where(expression);
         }
     }
 }
