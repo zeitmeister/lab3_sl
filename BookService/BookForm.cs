@@ -96,5 +96,26 @@ namespace BookService
                 listBox1.Items.Add(book);
             }
         }
+
+        private void Button6_Click(object sender, EventArgs e)
+        {
+            foreach (var book in inMemory.MostFavouriteBooks((int)numericUpDown3.Value))
+            {
+                listBox1.Items.Add(book);
+            }
+        }
+
+        private void Button7_Click(object sender, EventArgs e)
+        {
+            foreach (var book in inMemory.AllBooks())
+            {
+                inMemory.FilterBooksBy(Test(book));
+            }
+        }
+
+        public bool Test(Book book)
+        {
+            return book.Rating > 4;
+        }
     }
 }

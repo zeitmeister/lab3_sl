@@ -14,5 +14,7 @@ namespace BookService
         IEnumerable<Book> BooksByYear(int year);
         IEnumerable<Book> BooksBetweenYears(int yearA, int yearB);
         IEnumerable<Book> LeastFavouriteBooks();
+        IEnumerable<Book> MostFavouriteBooks(int numberOfBooks);
+        IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression);
     }
 }

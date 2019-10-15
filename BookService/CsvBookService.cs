@@ -46,5 +46,20 @@ namespace BookService
         {
             return _books.OrderBy(b => b.Rating).Take(5);
         }
+
+        public IEnumerable<Book> MostFavouriteBooks(int numberOfBooks)
+        {
+            return _books.OrderByDescending(b => b.Rating).Take(numberOfBooks);
+        }
+
+        public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
+        {
+            return _books.Where(Test);
+        }
+
+        public bool Test(Book book)
+        {
+            return book.Rating > 4;
+        }
     }
 }

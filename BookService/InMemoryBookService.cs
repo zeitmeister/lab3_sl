@@ -14,9 +14,9 @@ namespace BookService
 
         public InMemoryBookService()
         {
-            Book book1 = new Book(132353, "Skepparkransen", 2014, 8, 294);
-            Book book2 = new Book(210909, "Den Tomma Stolen", 2011, 7, 38);
-            Book book3 = new Book(928838, "Ninjan", 2013, 4, 8472);
+            Book book1 = new Book("132353", "Skepparkransen", 2014, 8, 294);
+            Book book2 = new Book("210909", "Den Tomma Stolen", 2011, 7, 38);
+            Book book3 = new Book("928838", "Ninjan", 2013, 4, 8472);
 
             Author author1 = new Author("Kenneth Rugstål");
             Author author2 = new Author("Selma Smagerost");
@@ -75,6 +75,16 @@ namespace BookService
         }
 
         public IEnumerable<Book> LeastFavouriteBooks()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> MostFavouriteBooks(int numberOfBooks)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
         {
             throw new NotImplementedException();
         }

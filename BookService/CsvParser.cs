@@ -52,10 +52,8 @@ namespace BookService
                 var items = line.Split(new string[] { ";" }, StringSplitOptions.None);
 
                 int year, votes;
-                long isbn;
                 int.TryParse(items[2], out year);
                 int.TryParse(items[5], out votes);
-                long.TryParse(items[0], out isbn);
 
                 double rating;
                 var style = NumberStyles.Number;
@@ -65,7 +63,7 @@ namespace BookService
 
                 Book book = new Book
                 {
-                    ISBN = isbn,
+                    ISBN = items[0],
                     Title = items[3],
                     YearOfPublication = year,
                     Rating = rating,
