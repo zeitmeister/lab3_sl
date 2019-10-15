@@ -19,3 +19,14 @@ C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.csproj.C
 C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.exe
 C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.pdb
 C:\Users\KM\source\repos\lab3\lab3_sl\BookService\obj\Debug\BookService.Configuration.resources
+x:\Desktop\lab3_sl\BookService\bin\Debug\BookService.exe.config
+x:\Desktop\lab3_sl\BookService\bin\Debug\BookService.exe
+x:\Desktop\lab3_sl\BookService\bin\Debug\BookService.pdb
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.csprojAssemblyReference.cache
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.BookForm.resources
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.Configuration.resources
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.Properties.Resources.resources
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.csproj.GenerateResource.cache
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.csproj.CoreCompileInputs.cache
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.exe
+x:\Desktop\lab3_sl\BookService\obj\Debug\BookService.pdb

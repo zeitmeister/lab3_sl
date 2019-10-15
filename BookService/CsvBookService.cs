@@ -54,12 +54,9 @@ namespace BookService
 
         public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
         {
-            return _books.Where(Test);
+            return _books.Where(expression);
         }
 
-        public bool Test(Book book)
-        {
-            return book.Rating > 4;
-        }
+
     }
 }
