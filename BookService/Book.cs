@@ -33,7 +33,7 @@ namespace BookService
         public override string ToString()
         {
             var authors = Authors.Select(a => a.Name);
-            string result = "Title: " + this.Title + ". By: ";
+            string result = "(" + this.YearOfPublication + ") " + "Title: " + this.Title + ". By: ";
             foreach (var author in authors)
             {
                 result += author + ", ";
