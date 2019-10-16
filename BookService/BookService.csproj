@@ -67,6 +67,7 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="SimpleDI.cs" />
     <Compile Include="WriteToFile.cs" />
+    <Compile Include="WriteToFileIntermediate.cs" />
     <EmbeddedResource Include="BookForm.resx">
       <DependentUpon>BookForm.cs</DependentUpon>
     </EmbeddedResource>

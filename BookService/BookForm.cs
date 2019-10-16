@@ -14,43 +14,61 @@ namespace BookService
     {
         private IBookService inMemory = SimpleDI.GetService();
         private bool checker;
+        private WriteToFileIntermediate intermediate = new WriteToFileIntermediate();
+
+        public event EventHandler<EventArgs> Pressed;
+        EventArgs args = new EventArgs();
+        
+
         public BookForm()
         {
             InitializeComponent();
             domainUpDown1.Items.Add("Sub 4 rating");
             domainUpDown1.Items.Add("More than 2 million votes");
-            
 
+            foreach (var button in Controls.OfType<Button>())
+            {
+                button.Click += Button_Click;
+            }
         }
 
+        private void Button_Click(object sender, EventArgs e)
+        {
+            button8.Visible = true;
+        }
 
         private void Button1_Click(object sender, EventArgs e)
         {
+            Pressed(this, args);
             listBox1.Items.Clear();
-            foreach (var book in inMemory.AllBooks())
+            var books = inMemory.AllBooks();
+            foreach (var book in books)
             {
                 listBox1.Items.Add(book);
             }
+            intermediate.BooksOrAuthors = books;
         }
 
         private void Button2_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            foreach (var author in inMemory.AllAuthors())
+            var books = inMemory.AllAuthors();
+            foreach (var author in books)
             {
                 listBox1.Items.Add(author);
             }
+            intermediate.BooksOrAuthors = books;
         }
 
         private void Button3_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            textBox1.Visible = true;
-            foreach (var book in inMemory.BooksByAuthor(textBox1.Text))
+            var books = inMemory.BooksByAuthor(textBox1.Text);
+            foreach (var book in books)
             {
                 listBox1.Items.Add(book);
             }
-
+            intermediate.BooksOrAuthors = books;
         }
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
@@ -61,11 +79,12 @@ namespace BookService
         private void Button4_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            textBox1.Visible = true;
-            foreach (var book in inMemory.BooksByYear(Int32.Parse(textBox1.Text)))
+            var books = inMemory.BooksByYear(int.Parse(textBox1.Text));
+            foreach (var book in books)
             {
                 listBox1.Items.Add(book);
             }
+            intermediate.BooksOrAuthors = books;
         }
 
         private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
@@ -76,10 +95,12 @@ namespace BookService
         private void Button1_Click_1(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            foreach (var book in inMemory.BooksBetweenYears((int)numericUpDown1.Value, (int)numericUpDown2.Value))
+            var books = inMemory.BooksBetweenYears((int)numericUpDown1.Value, (int)numericUpDown2.Value);
+            foreach (var book in books)
             {
                 listBox1.Items.Add(book);
             }
+            intermediate.BooksOrAuthors = books;
         }
 
         private void Button5_Click(object sender, EventArgs e)
@@ -88,23 +109,25 @@ namespace BookService
             listBox1.Items.Clear();
             if (!checker)
             {
-                
-                foreach (var book in inMemory.AllBooksOrderedByRating())
+                var books = inMemory.AllBooksOrderedByRating();
+                foreach (var book in books)
                 {
                     listBox1.Items.Add(book);
                 }
                 button5.Text = "Order by top rating";
+                intermediate.BooksOrAuthors = books;
             }
             if (checker)
             {
-                
-                foreach (var book in inMemory.AllBooksOrderedByRatingRev())
+                var books = inMemory.AllBooksOrderedByRating();
+                foreach (var book in books)
                 {
                     listBox1.Items.Add(book);
                 }
                 button5.Text = "Order by lowest rating";
+                intermediate.BooksOrAuthors = books;
             }
-
+            
             checker = !checker;
         }
 
@@ -112,28 +135,19 @@ namespace BookService
         private void Button6_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            foreach (var book in inMemory.BooksWithMostNumberOfVotes((int)numericUpDown3.Value))
+            var books = inMemory.BooksWithMostNumberOfVotes((int)numericUpDown3.Value);
+            foreach (var book in books)
             {
                 listBox1.Items.Add(book);
             }
 
         }
 
-        /*private void CheckFilterOption()
-        {
-            if (domainUpDown1.Text ==)
-        }*/
-
         private void Button7_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
             List<Book> bookList = new List<Book>();
-            /*var bookList = inMemory.FilterBooksBy(b => b.Rating < 4).ToList();
 
-            foreach (var book in bookList)
-            {
-                listBox1.Items.Add(book);
-            }*/
             if (domainUpDown1.Text == "Sub 4 rating")
             {
                 bookList = inMemory.FilterBooksBy(Sub4Rating).ToList();
@@ -162,7 +176,7 @@ namespace BookService
 
         private void button8_Click(object sender, EventArgs e)
         {
-            //WriteToFile<ListBox.ObjectCollection>.WriteToTextFile(listBox1.Items);
+           WriteToFile<object>.WriteToTextFile(intermediate.BooksOrAuthors);
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
