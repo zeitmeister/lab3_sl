@@ -38,7 +38,7 @@ namespace BookService
             {
                 result += author + ", ";
             }
-            result += "Rating: " +this.Rating;
+            result += "Rating: " + this.Rating + ", Votes: " + this.NumberOfUserVotes;
             return result;
         }
     }

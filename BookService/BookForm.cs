@@ -29,11 +29,6 @@ namespace BookService
             }
         }
 
-        public bool IsString(object value)
-        {
-            return value is string;
-        }
-
         private void Button_Click(object sender, EventArgs e)
         {
             button8.Visible = true;
