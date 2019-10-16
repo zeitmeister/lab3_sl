@@ -113,7 +113,7 @@
             // numericUpDown1
             // 
             this.numericUpDown1.Location = new System.Drawing.Point(20, 29);
-            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             2020,
             0,
@@ -137,7 +137,7 @@
             // numericUpDown2
             // 
             this.numericUpDown2.Location = new System.Drawing.Point(145, 29);
-            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             2020,
             0,
@@ -160,7 +160,7 @@
             // button1
             // 
             this.button1.Location = new System.Drawing.Point(69, 69);
-            this.button1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 25);
             this.button1.TabIndex = 9;
@@ -171,29 +171,29 @@
             // button5
             // 
             this.button5.Location = new System.Drawing.Point(204, 94);
-            this.button5.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 23);
             this.button5.TabIndex = 10;
-            this.button5.Text = "5 least rated books";
+            this.button5.Text = "Order by lowest rating";
             this.button5.UseVisualStyleBackColor = true;
             this.button5.Click += new System.EventHandler(this.Button5_Click);
             // 
             // button6
             // 
             this.button6.Location = new System.Drawing.Point(7, 36);
-            this.button6.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button6.Margin = new System.Windows.Forms.Padding(2);
             this.button6.Name = "button6";
-            this.button6.Size = new System.Drawing.Size(124, 23);
+            this.button6.Size = new System.Drawing.Size(150, 23);
             this.button6.TabIndex = 12;
-            this.button6.Text = "Filter top rated books";
+            this.button6.Text = "How many books with votes";
             this.button6.UseVisualStyleBackColor = true;
             this.button6.Click += new System.EventHandler(this.Button6_Click);
             // 
             // numericUpDown3
             // 
             this.numericUpDown3.Location = new System.Drawing.Point(26, 7);
-            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.numericUpDown3.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown3.Maximum = new decimal(new int[] {
             10000,
             0,
@@ -208,16 +208,16 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.numericUpDown3);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(183, 151);
-            this.panel1.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.panel1.Location = new System.Drawing.Point(173, 151);
+            this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(134, 66);
+            this.panel1.Size = new System.Drawing.Size(163, 66);
             this.panel1.TabIndex = 13;
             // 
             // button7
             // 
             this.button7.Location = new System.Drawing.Point(178, 20);
-            this.button7.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.button7.Margin = new System.Windows.Forms.Padding(2);
             this.button7.Name = "button7";
             this.button7.Size = new System.Drawing.Size(77, 23);
             this.button7.TabIndex = 14;
@@ -283,6 +283,7 @@
             this.Controls.Add(this.listBox1);
             this.Name = "BookForm";
             this.Text = "BookForm";
+            this.Load += new System.EventHandler(this.BookForm_Load);
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).EndInit();

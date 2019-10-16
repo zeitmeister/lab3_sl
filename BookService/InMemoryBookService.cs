@@ -74,17 +74,33 @@ namespace BookService
             throw new NotImplementedException();
         }
 
-        public IEnumerable<Book> LeastFavouriteBooks()
-        {
-            throw new NotImplementedException();
-        }
-
-        public IEnumerable<Book> MostFavouriteBooks(int numberOfBooks)
-        {
-            throw new NotImplementedException();
-        }
 
         public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
+        {
+            throw new NotImplementedException();
+        }
+
+        public Func<Book, bool> Sub4Rating()
+        {
+            throw new NotImplementedException();
+        }
+
+        public Func<Book, bool> TwoMilVotes()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> AllBooksOrderedByRating()
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> BooksWithMostNumberOfVotes(int numberOfBooks)
+        {
+            throw new NotImplementedException();
+        }
+
+        public IEnumerable<Book> AllBooksOrderedByRatingRev()
         {
             throw new NotImplementedException();
         }

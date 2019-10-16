@@ -1,10 +1,79 @@
-Title: The Hunger Games. By: Suzanne Collins, 4,34
-Title: Harry Potter and the Philosopher's Stone. By: J.K. Rowling,  Mary Grandpre, 4,44
 Title: Twilight. By: Stephenie Meyer, 3,57
-Title: To Kill a Mockingbird. By: Harper Lee, 4,25
 Title: The Great Gatsby. By: F. Scott Fitzgerald, 3,89
-Title: The Fault in Our Stars. By: John Green, 4,26
-Title: The Hobbit or There and Back Again. By: J.R.R. Tolkien, 4,25
 Title: The Catcher in the Rye. By: J.D. Salinger, 3,79
 Title: Angels & Demons . By: Dan Brown, 3,85
-Title: Pride and Prejudice. By: Jane Austen, 4,24
+Title: Animal Farm: A Fairy Story. By: George Orwell, 3,87
+Title: The Lovely Bones. By: Alice Sebold, 3,77
+Title: The Da Vinci Code. By: Dan Brown, 3,79
+Title: Lord of the Flies . By: William Golding, 3,64
+Title: An Excellent conceited Tragedie of Romeo and Juliet. By: William Shakespeare,  Robert Jackson, 3,73
+Title: Of Mice and Men . By: John Steinbeck, 3,84
+Title: Fifty Shades of Grey. By: E.L. James, 3,67
+Title: O Alquimista. By: Paulo Coelho,  Alan R. Clarke, 3,82
+Title: The Time Traveler's Wife. By: Audrey Niffenegger, 3,95
+Title: Eat, pray, love: one woman's search for everything across Italy, India and Indonesia. By: Elizabeth Gilbert, 3,51
+Title: Life of Pi. By: Yann Martel, 3,88
+Title: Fahrenheit 451. By: Ray Bradbury, 3,97
+Title: New Moon (Twilight, #2). By: Stephenie Meyer, 3,52
+Title: Eclipse. By: Stephenie Meyer, 3,69
+Title: Eragon. By: Christopher Paolini, 3,86
+Title: Brave New World. By: Aldous Huxley, 3,97
+Title: Breaking Dawn. By: Stephenie Meyer, 3,7
+Title: The Adventures of Huckleberry Finn. By: Mark Twain,  John Seelye,  Guy Cardwell, 3,8
+Title: The Curious Incident of the Dog in the Night-Time. By: Mark Haddon, 3,85
+Title: The Girl on the Train. By: Paula Hawkins, 3,88
+Title: Northern Lights. By: Philip Pullman, 3,94
+Title: Wuthering Heights. By: Emily Bronte,  Richard J. Dunn, 3,82
+Title: Frankenstein. By: Mary Wollstonecraft Shelley,  Percy Bysshe Shelley,  Maurice Hindle, 3,76
+Title: The Host. By: Stephenie Meyer, 3,84
+Title: Bridget Jones Diary. By: Helen Fielding, 3,75
+Title: Holes. By: Louis Sachar,  Louis Sachar, 3,93
+Title: The Devil Wears Prada. By: Lauren Weisberger, 3,7
+Title: The Illiad. By: Homer,  Robert Fagles,  E.V. Rieu,  Frederic Mugler,  Bernard Knox, 3,73
+Title: Into the Wild. By: Jon Krakauer, 3,94
+Title: A Tale of Two Cities. By: Charles Dickens,  Richard Maxwell,  Hablot Knight Browne, 3,81
+Title: Jurassic Park. By: Michael Crichton, 3,96
+Title: Paper Towns. By: John Green, 3,88
+Title: Freakonomics: A Rogue Economist Explores the Hidden Side of Everything. By: Steven D. Levitt,  Stephen J. Dubner, 3,93
+Title: Fifty Shades Freed. By: E.L. James, 3,88
+Title: Dracula. By: Bram Stoker,  Nina Auerbach,  David J. Skal, 3,98
+Title: Fifty Shades Darker. By: E.L. James, 3,87
+Title: Me Talk Pretty One Day. By: David Sedaris, 3,97
+Title: The Road. By: Cormac McCarthy, 3,95
+Title: Allegiant. By: Veronica Roth, 3,63
+Title: Confessions of a Shopaholic. By: Sophie Kinsella, 3,61
+Title: The Memory Keeper's Daughter. By: Kim Edwards, 3,64
+Title: Catch-22. By: Joseph Heller, 3,98
+Title: Middlesex. By: Jeffrey Eugenides, 3,98
+Title: The Adventures of Tom Sawyer. By: Mark Twain,  Guy Cardwell,  John Seelye, 3,89
+Title: The Joy Luck Club. By: Amy Tan, 3,9
+Title: The Sisterhood of the Traveling Pants. By: Ann Brashares, 3,75
+Title: Wicked: The Life and Times of the Wicked Witch of the West. By: Gregory Maguire,  Douglas Smith, 3,52
+Title: The Firm. By: John Grisham, 3,99
+Title: The Tipping Point: How Little Things Can Make a Big Difference. By: Malcolm Gladwell, 3,92
+Title: The Old Man and the Sea. By: Ernest Hemingway, 3,73
+Title: The Grapes of Wrath. By: John Steinbeck, 3,92
+Title: The Five People You Meet in Heaven. By: Mitch Albom, 3,9
+Title: Divine Secrets of the Ya-Ya Sisterhood. By: Rebecca Wells, 3,79
+Title: The Scarlet Letter. By: Nathaniel Hawthorne,  Thomas E. Connolly,  Nina Baym, 3,37
+Title: Miss Peregrine's Home for Peculiar Children. By: Ransom Riggs, 3,89
+Title: Deception Point. By: Dan Brown, 3,67
+Title: The Goldfinch. By: Donna Tartt, 3,87
+Title: Girl with a Pearl Earring. By: Tracy Chevalier, 3,85
+Title: If I Stay. By: Gayle Forman, 3,96
+Title: The Tragedy of Macbeth. By: William Shakespeare, 3,88
+Title: Something Borrowed. By: Emily Giffin, 3,83
+Title: Great Expectations. By: Charles Dickens, 3,75
+Title: Matched. By: Ally Condie, 3,68
+Title: Digital Fortress. By: Dan Brown, 3,6
+Title: Emma. By: Jane Austen,  Fiona Stafford, 3,99
+Title: A Clockwork Orange. By: Anthony Burgess, 3,98
+Title: The Shack: Where Tragedy Confronts Eternity. By: William Paul Young, 3,74
+Title: The Bell Jar. By: Sylvia Plath, 3,98
+Title: Siddhartha. By: Hermann Hesse,  Hilda Rosner, 3,99
+Title: Beautiful Creatures. By: Kami Garcia,  Margaret Stohl, 3,76
+Title: Uglies. By: Scott Westerfeld, 3,86
+Title: Wild: From Lost to Found on the Pacific Crest Trail . By: Cheryl Strayed, 3,96
+Title: Dead Until Dark. By: Charlaine Harris, 3,96
+Title: The Lost Symbol. By: Dan Brown, 3,66
+Title: Interview with the Vampire. By: Anne Rice, 3,97

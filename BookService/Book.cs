@@ -39,7 +39,7 @@ namespace BookService
             {
                 result += author + ", ";
             }
-            result += this.Rating;
+            result += "Rating: " +this.Rating;
             return result;
         }
     }

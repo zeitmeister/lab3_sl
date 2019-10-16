@@ -13,13 +13,14 @@ namespace BookService
     public partial class BookForm : Form
     {
         private IBookService inMemory = SimpleDI.GetService();
-
+        private bool checker;
         public BookForm()
         {
             InitializeComponent();
             domainUpDown1.Items.Add("Sub 4 rating");
             domainUpDown1.Items.Add("More than 2 million votes");
             
+
         }
 
 
@@ -83,17 +84,35 @@ namespace BookService
 
         private void Button5_Click(object sender, EventArgs e)
         {
+            
             listBox1.Items.Clear();
-            foreach (var book in inMemory.LeastFavouriteBooks())
+            if (!checker)
             {
-                listBox1.Items.Add(book);
+                
+                foreach (var book in inMemory.AllBooksOrderedByRating())
+                {
+                    listBox1.Items.Add(book);
+                }
+                button5.Text = "Order by top rating";
             }
+            if (checker)
+            {
+                
+                foreach (var book in inMemory.AllBooksOrderedByRatingRev())
+                {
+                    listBox1.Items.Add(book);
+                }
+                button5.Text = "Order by lowest rating";
+            }
+
+            checker = !checker;
         }
+
 
         private void Button6_Click(object sender, EventArgs e)
         {
             listBox1.Items.Clear();
-            foreach (var book in inMemory.MostFavouriteBooks((int)numericUpDown3.Value))
+            foreach (var book in inMemory.BooksWithMostNumberOfVotes((int)numericUpDown3.Value))
             {
                 listBox1.Items.Add(book);
             }
@@ -117,7 +136,7 @@ namespace BookService
             }*/
             if (domainUpDown1.Text == "Sub 4 rating")
             {
-                bookList = inMemory.FilterBooksBy(b => b.Rating < 4).ToList();
+                bookList = inMemory.FilterBooksBy(Sub4Rating).ToList();
                 foreach (var book in bookList)
                 {
                     listBox1.Items.Add(book);
@@ -125,7 +144,7 @@ namespace BookService
             }
             if (domainUpDown1.Text == "More than 2 million votes")
             {
-                bookList = inMemory.FilterBooksBy(b => b.NumberOfUserVotes > 2000000).ToList();
+                bookList = inMemory.FilterBooksBy(TwoMilVotes).ToList();
                 foreach (var book in bookList)
                 {
                     listBox1.Items.Add(book);
@@ -137,12 +156,21 @@ namespace BookService
             button7.Text = "Books sub 4 rating";
         }
 
+        public Func<Book, bool> Sub4Rating = b => b.Rating < 4;
+        public Func<Book, bool> TwoMilVotes = b => b.NumberOfUserVotes > 2000000;
+
+
         private void button8_Click(object sender, EventArgs e)
         {
-            WriteToFile<ListBox.ObjectCollection>.WriteToTextFile(listBox1.Items);
+            //WriteToFile<ListBox.ObjectCollection>.WriteToTextFile(listBox1.Items);
         }
 
         private void domainUpDown1_SelectedItemChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void BookForm_Load(object sender, EventArgs e)
         {
 
         }

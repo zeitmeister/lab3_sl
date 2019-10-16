@@ -42,14 +42,14 @@ namespace BookService
             return _books.Where(b => b.YearOfPublication > yearA && b.YearOfPublication < yearB);
         }
 
-        public IEnumerable<Book> LeastFavouriteBooks()
+        public IEnumerable<Book> AllBooksOrderedByRating()
         {
-            return _books.OrderBy(b => b.Rating).Take(5);
+            return _books.OrderBy(b => b.Rating);
         }
 
-        public IEnumerable<Book> MostFavouriteBooks(int numberOfBooks)
+        public IEnumerable<Book> BooksWithMostNumberOfVotes(int numberOfBooks)
         {
-            return _books.OrderByDescending(b => b.Rating).Take(numberOfBooks);
+            return _books.OrderByDescending(b => b.NumberOfUserVotes).Take(numberOfBooks);
         }
 
         public IEnumerable<Book> FilterBooksBy(Func<Book, bool> expression)
@@ -57,6 +57,13 @@ namespace BookService
             return _books.Where(expression);
         }
 
+        public IEnumerable<Book> AllBooksOrderedByRatingRev()
+        {
+            return _books.OrderByDescending(b => b.Rating);
+        }
 
+        public Func<Book, bool> Sub4Rating = b => b.Rating < 4;
+
+        public Func<Book, bool> TwoMilVotes = b => b.NumberOfUserVotes > 2000000;
     }
 }
