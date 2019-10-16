@@ -14,6 +14,7 @@ namespace BookService
         public double Rating { get; set; }
         public int NumberOfUserVotes { get; set; }
         public ICollection<Author> Authors { get; set; }
+        
 
         public Book(string isbn, string title, int yearOfPublication, double rating, int numberOfUserVotes)
         {
@@ -23,8 +24,6 @@ namespace BookService
             Rating = rating;
             NumberOfUserVotes = numberOfUserVotes;
             Authors = new List<Author>();
-
-            
         }
         public Book()
         {

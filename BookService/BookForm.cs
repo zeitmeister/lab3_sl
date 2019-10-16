@@ -16,10 +16,7 @@ namespace BookService
         private bool checker;
         private WriteToFileIntermediate intermediate = new WriteToFileIntermediate();
 
-        public event EventHandler<EventArgs> Pressed;
-        EventArgs args = new EventArgs();
         
-
         public BookForm()
         {
             InitializeComponent();
@@ -39,7 +36,6 @@ namespace BookService
 
         private void Button1_Click(object sender, EventArgs e)
         {
-            Pressed(this, args);
             listBox1.Items.Clear();
             var books = inMemory.AllBooks();
             foreach (var book in books)
@@ -119,7 +115,7 @@ namespace BookService
             }
             if (checker)
             {
-                var books = inMemory.AllBooksOrderedByRating();
+                var books = inMemory.AllBooksOrderedByRatingRev();
                 foreach (var book in books)
                 {
                     listBox1.Items.Add(book);
@@ -150,7 +146,7 @@ namespace BookService
 
             if (domainUpDown1.Text == "Sub 4 rating")
             {
-                bookList = inMemory.FilterBooksBy(Sub4Rating).ToList();
+                bookList = inMemory.FilterBooksBy(Sub4Rating).OrderBy(b => b.Rating).ToList();
                 foreach (var book in bookList)
                 {
                     listBox1.Items.Add(book);

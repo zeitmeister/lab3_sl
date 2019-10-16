@@ -1,25 +1,10 @@
+Title: The Hunger Games. By: Suzanne Collins, Rating: 4,34
 Title: Harry Potter and the Philosopher's Stone. By: J.K. Rowling,  Mary Grandpre, Rating: 4,44
-Title: Harry Potter and the Prisoner of Azkaban. By: J.K. Rowling,  Mary Grandpre,  Rufus Beck, Rating: 4,53
-Title: Harry Potter and the Chamber of Secrets. By: J.K. Rowling,  Mary Grandpre, Rating: 4,37
-Title: Memoirs of a Geisha. By: Arthur Golden, Rating: 4,08
-Title: The Giver. By: Lois Lowry, Rating: 4,12
-Title: A Game of Thrones. By: George R.R. Martin, Rating: 4,45
-Title: The Notebook. By: Nicholas Sparks, Rating: 4,06
-Title: Northern Lights. By: Philip Pullman, Rating: 3,94
-Title: The Perks of Being a Wallflower. By: Stephen Chbosky, Rating: 4,21
-Title: Bridget Jones Diary. By: Helen Fielding, Rating: 3,75
-Title: Holes. By: Louis Sachar,  Louis Sachar, Rating: 3,93
-Title: Into the Wild. By: Jon Krakauer, Rating: 3,94
-Title: The Poisonwood Bible. By: Barbara Kingsolver, Rating: 4,02
-Title: A Walk to Remember. By: Nicholas Sparks, Rating: 4,15
-Title: A Clash of Kings. By: George R.R. Martin, Rating: 4,4
-Title: Tuesdays with Morrie. By: Mitch Albom,  Saulius Dagys, Rating: 4,06
-Title: Wicked: The Life and Times of the Wicked Witch of the West. By: Gregory Maguire,  Douglas Smith, Rating: 3,52
-Title: The Firm. By: John Grisham, Rating: 3,99
-Title: Divine Secrets of the Ya-Ya Sisterhood. By: Rebecca Wells, Rating: 3,79
-Title: Outlander. By: Diana Gabaldon, Rating: 4,2
-Title: Girl with a Pearl Earring. By: Tracy Chevalier, Rating: 3,85
-Title: The Red Tent. By: Anita Diamant, Rating: 4,16
-Title: Digital Fortress. By: Dan Brown, Rating: 3,6
-Title: Angela's Ashes: A Memoir. By: Frank McCourt, Rating: 4,07
-Title: Fight Club. By: Chuck Palahniuk, Rating: 4,2
+Title: Twilight. By: Stephenie Meyer, Rating: 3,57
+Title: To Kill a Mockingbird. By: Harper Lee, Rating: 4,25
+Title: The Great Gatsby. By: F. Scott Fitzgerald, Rating: 3,89
+Title: The Fault in Our Stars. By: John Green, Rating: 4,26
+Title: The Hobbit or There and Back Again. By: J.R.R. Tolkien, Rating: 4,25
+Title: The Catcher in the Rye. By: J.D. Salinger, Rating: 3,79
+Title: Angels & Demons . By: Dan Brown, Rating: 3,85
+Title: Pride and Prejudice. By: Jane Austen, Rating: 4,24

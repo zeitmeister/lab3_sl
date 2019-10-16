@@ -46,25 +46,27 @@
             this.panel2 = new System.Windows.Forms.Panel();
             this.domainUpDown1 = new System.Windows.Forms.DomainUpDown();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown2)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.numericUpDown3)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // listBox1
             // 
             this.listBox1.FormattingEnabled = true;
-            this.listBox1.Location = new System.Drawing.Point(336, 145);
+            this.listBox1.Location = new System.Drawing.Point(194, 94);
             this.listBox1.Name = "listBox1";
-            this.listBox1.Size = new System.Drawing.Size(452, 212);
+            this.listBox1.Size = new System.Drawing.Size(594, 212);
             this.listBox1.TabIndex = 1;
             // 
             // allBooksButton
             // 
-            this.allBooksButton.Location = new System.Drawing.Point(57, 94);
+            this.allBooksButton.Location = new System.Drawing.Point(38, 94);
             this.allBooksButton.Name = "allBooksButton";
             this.allBooksButton.Size = new System.Drawing.Size(111, 23);
             this.allBooksButton.TabIndex = 2;
@@ -74,7 +76,7 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(57, 123);
+            this.button2.Location = new System.Drawing.Point(38, 123);
             this.button2.Name = "button2";
             this.button2.Size = new System.Drawing.Size(111, 23);
             this.button2.TabIndex = 3;
@@ -84,7 +86,7 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(57, 158);
+            this.button3.Location = new System.Drawing.Point(26, 19);
             this.button3.Name = "button3";
             this.button3.Size = new System.Drawing.Size(111, 23);
             this.button3.TabIndex = 4;
@@ -94,7 +96,7 @@
             // 
             // button4
             // 
-            this.button4.Location = new System.Drawing.Point(57, 187);
+            this.button4.Location = new System.Drawing.Point(26, 48);
             this.button4.Name = "button4";
             this.button4.Size = new System.Drawing.Size(111, 23);
             this.button4.TabIndex = 5;
@@ -104,15 +106,15 @@
             // 
             // textBox1
             // 
-            this.textBox1.Location = new System.Drawing.Point(57, 216);
+            this.textBox1.Location = new System.Drawing.Point(26, 77);
             this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.Size = new System.Drawing.Size(111, 20);
             this.textBox1.TabIndex = 6;
             this.textBox1.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // numericUpDown1
             // 
-            this.numericUpDown1.Location = new System.Drawing.Point(20, 29);
+            this.numericUpDown1.Location = new System.Drawing.Point(12, 7);
             this.numericUpDown1.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown1.Maximum = new decimal(new int[] {
             2020,
@@ -136,7 +138,7 @@
             // 
             // numericUpDown2
             // 
-            this.numericUpDown2.Location = new System.Drawing.Point(145, 29);
+            this.numericUpDown2.Location = new System.Drawing.Point(146, 7);
             this.numericUpDown2.Margin = new System.Windows.Forms.Padding(2);
             this.numericUpDown2.Maximum = new decimal(new int[] {
             2020,
@@ -159,7 +161,7 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(69, 69);
+            this.button1.Location = new System.Drawing.Point(77, 31);
             this.button1.Margin = new System.Windows.Forms.Padding(2);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(106, 25);
@@ -170,7 +172,7 @@
             // 
             // button5
             // 
-            this.button5.Location = new System.Drawing.Point(204, 94);
+            this.button5.Location = new System.Drawing.Point(415, 55);
             this.button5.Margin = new System.Windows.Forms.Padding(2);
             this.button5.Name = "button5";
             this.button5.Size = new System.Drawing.Size(132, 23);
@@ -208,7 +210,7 @@
             this.panel1.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel1.Controls.Add(this.numericUpDown3);
             this.panel1.Controls.Add(this.button6);
-            this.panel1.Location = new System.Drawing.Point(173, 151);
+            this.panel1.Location = new System.Drawing.Point(271, 373);
             this.panel1.Margin = new System.Windows.Forms.Padding(2);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(163, 66);
@@ -227,7 +229,7 @@
             // 
             // button8
             // 
-            this.button8.Location = new System.Drawing.Point(515, 51);
+            this.button8.Location = new System.Drawing.Point(645, 312);
             this.button8.Name = "button8";
             this.button8.Size = new System.Drawing.Size(143, 23);
             this.button8.TabIndex = 15;
@@ -242,9 +244,9 @@
             this.panel2.Controls.Add(this.numericUpDown1);
             this.panel2.Controls.Add(this.numericUpDown2);
             this.panel2.Controls.Add(this.button1);
-            this.panel2.Location = new System.Drawing.Point(14, 308);
+            this.panel2.Location = new System.Drawing.Point(12, 373);
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(243, 113);
+            this.panel2.Size = new System.Drawing.Size(243, 66);
             this.panel2.TabIndex = 16;
             // 
             // domainUpDown1
@@ -261,24 +263,33 @@
             this.panel3.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
             this.panel3.Controls.Add(this.button7);
             this.panel3.Controls.Add(this.domainUpDown1);
-            this.panel3.Location = new System.Drawing.Point(403, 378);
+            this.panel3.Location = new System.Drawing.Point(456, 373);
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(282, 57);
+            this.panel3.Size = new System.Drawing.Size(282, 66);
             this.panel3.TabIndex = 18;
+            // 
+            // panel4
+            // 
+            this.panel4.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+            this.panel4.Controls.Add(this.button3);
+            this.panel4.Controls.Add(this.button4);
+            this.panel4.Controls.Add(this.textBox1);
+            this.panel4.Location = new System.Drawing.Point(12, 185);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(166, 121);
+            this.panel4.TabIndex = 19;
             // 
             // BookForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.button8);
             this.Controls.Add(this.panel1);
             this.Controls.Add(this.button5);
-            this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.button4);
-            this.Controls.Add(this.button3);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.allBooksButton);
             this.Controls.Add(this.listBox1);
@@ -291,8 +302,9 @@
             this.panel1.ResumeLayout(false);
             this.panel2.ResumeLayout(false);
             this.panel3.ResumeLayout(false);
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -315,6 +327,7 @@
         private System.Windows.Forms.Panel panel2;
         private System.Windows.Forms.DomainUpDown domainUpDown1;
         private System.Windows.Forms.Panel panel3;
+        private System.Windows.Forms.Panel panel4;
     }
 }
 
