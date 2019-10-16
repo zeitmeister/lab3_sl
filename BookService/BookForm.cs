@@ -29,6 +29,11 @@ namespace BookService
             }
         }
 
+        public bool IsString(object value)
+        {
+            return value is string;
+        }
+
         private void Button_Click(object sender, EventArgs e)
         {
             button8.Visible = true;
@@ -74,13 +79,22 @@ namespace BookService
 
         private void Button4_Click(object sender, EventArgs e)
         {
+            int number;
+            bool success = int.TryParse(textBox1.Text, out number);
             listBox1.Items.Clear();
-            var books = inMemory.BooksByYear(int.Parse(textBox1.Text));
-            foreach (var book in books)
+            if (success)
             {
-                listBox1.Items.Add(book);
+                var books = inMemory.BooksByYear(int.Parse(textBox1.Text));
+                foreach (var book in books)
+                {
+                    listBox1.Items.Add(book);
+                }
+                intermediate.BooksOrAuthors = books;
             }
-            intermediate.BooksOrAuthors = books;
+            else
+            {
+                MessageBox.Show("Please enter a number");
+            }
         }
 
         private void NumericUpDown1_ValueChanged(object sender, EventArgs e)
